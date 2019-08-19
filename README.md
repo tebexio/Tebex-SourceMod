@@ -1,6 +1,6 @@
-# Tebex_SouceMod
+# Tebex_SourceMod
 
-Tebex_SouceMod is the official SourceMod plugin for the [Tebex](https://www.tebex.io) server monitization platform.
+Tebex_SourceMod is the official SourceMod plugin for the [Tebex](https://www.tebex.io) server monitization platform.
 
 This plugin is a complete plugin to check for purchases from the Tebex platform and execute commands in game. The plugin is currently only tested against CS:GO, but may work on other games running SourceMod
 
