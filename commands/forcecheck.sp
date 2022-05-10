@@ -3,11 +3,10 @@ public void TebexForcecheckInit() {
 }
 
 public void Tebex_Forcecheck() {
-    Tebex_warn("Checking for commands to be executed...");
+    Tebex_warn("[Tebex™] Checking for commands to be executed...");
 
     TebexApiGet("/queue", "TebexFcSuccess", "TebexFcFail");
 }
-
 
 public void TebexFcFail(JSONObject json)
 {
@@ -46,16 +45,13 @@ public void TebexFcSuccess(JSONObject json)
             GetClientName(client, playerName, sizeof(playerName));
             //Do Online Command playerId, playerName, SteamId
             TebexDoOnlineCommands(pluginId, playerName, steamId);
-
         }
         x++;
     }
-
 }
 
 int GetClientFromSteamId(const String:auth[])
 {
-
     new String:clientAuth[32];
     for(new i=1; i <= MaxClients; i++)
     {
@@ -69,6 +65,5 @@ int GetClientFromSteamId(const String:auth[])
             }
         }
     }
-
     return -1;
 }
