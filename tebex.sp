@@ -15,7 +15,6 @@ public Plugin myinfo =
 int Tebex_nextCheck = 0;
 int Tebex_lastCalled = 0;
 
-
 /**
  * Some initial aliases to allow us to convert code from existing plugins easily
  */
@@ -54,7 +53,7 @@ public void Tebex_ok(const char[] message)
 
 #include "models/commandrunner.sp"
 
-public void OnConfigsExecuted()
+public void OnConfigsExecuted() 
 {
 
 }
@@ -62,7 +61,7 @@ public void OnConfigsExecuted()
 public void OnPluginStart()
 {
     Msg( "\n///////////////////////////////" );
-    Msg( "//    TebexSourceMod v0.1    //" );
+    Msg( "//    Tebex™ SourceMod v0.1   //" );
     Msg( "//   https://www.tebex.io/   //" );
     Msg( "///////////////////////////////" );
     Msg( "// Loading...                //" );
@@ -86,7 +85,7 @@ public void OnPluginStart()
 
     TebexConfig.GetString("secret", secret, 32);
     if (StrEqual(secret, "0", false)) {
-        Tebex_err( "You have not yet defined your secret key. Use tebex:secret <secret> to define your key" );
+        Tebex_err( "[Tebex™] You have not yet defined your secret key. Use tebex:secret <secret> to define your key" );
     } else {
         Tebex_Info();
     }
@@ -122,7 +121,6 @@ public Action Tebex_DoCmd(int args) {
 
 public Action Tebex_DoCheck(Handle timer)
 {
-
     if ((GetTime() - Tebex_lastCalled) > Tebex_nextCheck){
         Tebex_lastCalled = GetTime();
 
