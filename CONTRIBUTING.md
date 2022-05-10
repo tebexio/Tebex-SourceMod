@@ -1,5 +1,4 @@
 # Contributing to Tebex
-
 Contributions to any Tebex codebase must be made by using your own fork of our repository and then submitting pull requests.
 
 Contributions can take the form of new components/features, changes to existing features, tests, documentation, bug fixes or optimizations.
@@ -7,7 +6,6 @@ Contributions can take the form of new components/features, changes to existing 
 The Tebex team will review all contributions, and their decision is final. During the review process they may ask questions of your contributions, or request alterations or fixes. The Tebex team reserve the right to close any pull request or issue for any reason.
 
 ## Terms of Contributing
-
 By making a contribution, you agree to the terms below, which includes granting Tebex Ltd a royalty-free, perpetual and irrevocable license to use and relicense your contribution under any terms deemed fit to Tebex. You may only contribute software and materials originally created by you or your organisation and you must have the right to make such contributions.
 
 Subject to the terms and conditions of this Agreement, you grant to Tebex and all third party recipients of software, products, services, and information distributed by Tebex a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute the contributed code and such derivative works.
