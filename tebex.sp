@@ -4,14 +4,13 @@
 #include <sdktools>
 
 public Plugin myinfo =
-        {
-                name = "Tebex SourceMod",
-                author = "Tebex",
-                description = "Test",
-                version = "0.0.1",
-                url = "https://www.tebex.io/"
-        };
-
+{
+        name = "Tebex™ SourceMod",
+        author = "Tebex™",
+        description = "Tebex™ SourceMod",
+        version = "0.0.1",
+        url = "https://www.tebex.io/"
+};
 
 int Tebex_nextCheck = 0;
 int Tebex_lastCalled = 0;
@@ -49,7 +48,6 @@ public void Tebex_ok(const char[] message)
 #include "client/apiclient.sp"
 #include "models/buycommand.sp"
 
-
 #include "commands/info.sp"
 #include "commands/secret.sp"
 #include "commands/forcecheck.sp"
@@ -60,7 +58,6 @@ public void OnConfigsExecuted()
 {
 
 }
-
 
 public void OnPluginStart()
 {
@@ -99,7 +96,6 @@ public void OnPluginStart()
     secret = "";
 }
 
-
 public Action Tebex_DoCmd(int args) {
     if (args < 1) {
         Tebex_err("Invalid command");
@@ -133,4 +129,3 @@ public Action Tebex_DoCheck(Handle timer)
         Tebex_Forcecheck();
     }
 }
-
