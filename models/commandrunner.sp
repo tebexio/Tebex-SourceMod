@@ -3,7 +3,6 @@ int TebexDeleteAfter = 5;
 public void TebexCommandRunnerInit()
 {
     Msg( "// CommandRunner v0.1        //" );
-
 }
 
 public void TebexDoOfflineCommands()
@@ -28,7 +27,6 @@ public void TebexDoOnlineCommands(int playerPluginId, const char[] playerName, c
     data.SetNum("playerPluginId", playerPluginId);
     data.SetString("playerName", playerName);
     data.SetString("playerId", playerId);
-
 
     TebexApiGetCB(endpoint, "TebexOnSuccess", "TebexOffFail", data);
 }
@@ -115,7 +113,6 @@ public void TebexOffSuccess(JSONObject json)
             int executedCommands[10];
             exCount = 0;
         }
-
         pos++;
     }
 
@@ -125,7 +122,6 @@ public void TebexOffSuccess(JSONObject json)
         exCount = 0;
     }
 }
-
 
 public void TebexDeleteCommands(int[] commands)
 {
@@ -145,17 +141,13 @@ public void TebexDeleteCommands(int[] commands)
         }
         x++;
     }
-
     TebexApiDelete(endpoint, "TebexDelSuccess", "TebexOffFail");
-
 }
 
 public void TebexDelSuccess(JSONObject json)
 {
     Msg("Commands deleted");
 }
-
-
 
 public void TebexOffFail(JSONObject json)
 {
