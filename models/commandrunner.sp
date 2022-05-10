@@ -13,7 +13,7 @@ public void TebexDoOfflineCommands()
 public void TebexDoOnlineCommands(int playerPluginId, const char[] playerName, const char[] playerId)
 {
     char lineOut[512];
-    Format(lineOut, 512,  "Running online commands for %s (%s)", playerName, playerId);
+    Format(lineOut, 512, "[Tebex™] Running online commands for %s (%s)", playerName, playerId);
     Tebex_warn(lineOut);
     char endpoint[128];
 
@@ -66,7 +66,6 @@ public void TebexOnSuccess(JSONObject json, KeyValues data)
             int executedCommands[10];
             exCount = 0;
         }
-
         pos++;
     }
 
@@ -146,7 +145,7 @@ public void TebexDeleteCommands(int[] commands)
 
 public void TebexDelSuccess(JSONObject json)
 {
-    Msg("Commands deleted");
+    Msg("[Tebex™] Commands deleted");
 }
 
 public void TebexOffFail(JSONObject json)
