@@ -2,7 +2,7 @@ KeyValues TebexConfig;
 char TebexConfigFile[256];
 
 public void TebexConfigInit() {
-	Msg( "// Config Library 0.1		   //" );
+	Msg( "// Tebex™ SourceMod Config Library 0.1		   //" );
 
 	TebexConfig = new KeyValues("config");
 	TebexConfig.SetEscapeSequences(true);

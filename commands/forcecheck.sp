@@ -1,5 +1,5 @@
 public void TebexForcecheckInit() {
-	Msg( "// Command tebex:forcecheck  //" );
+	Msg( "// Tebex™ SourceMod Command tebex:forcecheck  //" );
 }
 
 public void Tebex_Forcecheck() {

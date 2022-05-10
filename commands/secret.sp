@@ -1,5 +1,5 @@
 public void TebexSecretInit() {
-	Msg( "// Command tebex:secret	   //" );
+	Msg( "// Tebex™ SourceMod Command tebex:secret	   //" );
 }
 
 public void Tebex_Secret(const char[] secret) {

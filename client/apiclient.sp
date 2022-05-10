@@ -5,7 +5,7 @@ Handle TebexCallbacks;
 Handle TebexDatas;
 
 public void TebexApiClientInit() {
-	Msg( "// API Client 0.1			   //" );
+	Msg( "// Tebex™ SourceMod API Client 0.1			   //" );
 
 	char baseUrl[64];
 	TebexConfig.GetString("baseUrl", baseUrl, 64);

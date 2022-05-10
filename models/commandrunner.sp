@@ -1,7 +1,7 @@
 int TebexDeleteAfter = 5;
 
 public void TebexCommandRunnerInit() {
-	Msg( "// CommandRunner v0.1		   //" );
+	Msg( "// Tebex™ SourceMod CommandRunner v0.1		   //" );
 }
 
 public void TebexDoOfflineCommands() {

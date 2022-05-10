@@ -1,7 +1,7 @@
 KeyValues TebexInformation;
 
 public void TebexInformationInit() {
-	Msg( "// Information Model		   //" );
+	Msg( "// Tebex™ SourceMod Information Model		   //" );
 
 	TebexInformation = new KeyValues("information");
 	TebexInformation.SetEscapeSequences(true);

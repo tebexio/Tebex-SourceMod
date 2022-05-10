@@ -1,5 +1,5 @@
 public void TebexInfoInit() {
-	Msg( "// Command tebex:info		   //" );
+	Msg( "// Tebex™ SourceMod Command tebex:info		   //" );
 }
 
 public void Tebex_Info() {
@@ -37,7 +37,7 @@ public void TebexInfoSuccess(JSONObject json) {
 	TebexInformation.SetNum("serverId", server.GetInt("id"));
 
 	Tebex_ok("[Tebex™] Server Information");
-	Tebex_ok("====================");
+	Tebex_ok("==========================");
 
 	char infoLine[256];
 	char buffer2[256];

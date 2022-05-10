@@ -54,9 +54,9 @@ public void OnConfigsExecuted() {
 public void OnPluginStart() {
 	Msg( "\n///////////////////////////////" );
 	Msg( "//	Tebex™ SourceMod v0.1	//" );
-	Msg( "//   https://www.tebex.io/   //" );
-	Msg( "///////////////////////////////" );
-	Msg( "// Loading...				   //" );
+	Msg( "//   https://www.tebex.io/    //" );
+	Msg( "////////////////////////////////" );
+	Msg( "// Loading...				    //" );
 
 	TebexConfigInit();
 	TebexInformationInit();

@@ -1,5 +1,5 @@
 public void TebexBuyCommandInit() {
-	Msg( "// Buy Command v0.1		   //" );
+	Msg( "// Tebex™ SourceMod Buy Command v0.1		   //" );
 	HookEvent("player_say", evPlayerSay);
 }
 
