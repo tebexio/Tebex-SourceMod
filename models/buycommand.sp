@@ -18,7 +18,7 @@ public Action evPlayerSay(Handle event, const char[] szName, bool dontBroadcast)
     int client = GetClientOfUserId(GetEventInt(event, "userid"));
 
     char outMsg[256];
-    Format(outMsg, 256, "To access our store, please visit %s", domain);
+    Format(outMsg, 256, "[Tebex™] To access our store, please visit %s", domain);
 
 
     if (StrEqual(msg, buyCommand, false)) {
