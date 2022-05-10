@@ -43,7 +43,7 @@ public void TebexSecSuccess(JSONObject json)
 
     char infoLine[256];
     TebexInformation.GetString("name", buffer, 256);
-    Format(infoLine, 256, "Your secret key has been validated! Webstore Name: %s", buffer);
+    Format(infoLine, 256, "[Tebex™] Your secret key has been validated! Webstore Name: %s", buffer);
     Tebex_ok(infoLine);
 }
 
