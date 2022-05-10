@@ -28,7 +28,6 @@ void TebexSetHeader()
 
 public void TebexApiGet(const char[] endpoint, const char[] success, const char[] failure)
 {
-
     TebexSetHeader();
     char callbacks[42];
     Format(callbacks, 42, "%s|%s", success, failure);
@@ -37,7 +36,6 @@ public void TebexApiGet(const char[] endpoint, const char[] success, const char[
 
     httpClient.Get(endpoint, OnRequestComplete, idx);
 }
-
 
 public void TebexApiGetCB(const char[] endpoint, const char[] success, const char[] failure, KeyValues data)
 {
@@ -55,7 +53,6 @@ public void TebexApiGetCB(const char[] endpoint, const char[] success, const cha
 
 public void TebexApiDelete(const char[] endpoint, const char[] success, const char[] failure)
 {
-
     TebexSetHeader();
     httpClient.Delete(endpoint, BlackHole);
 }
@@ -67,7 +64,6 @@ public void BlackHole(HTTPResponse response, int callbackIdx)
 
 public void OnRequestComplete(HTTPResponse response, int callbackIdx)
 {
-
     char value[42];
     GetArrayString(TebexCallbacks, callbackIdx, value, 42);
 
@@ -77,7 +73,7 @@ public void OnRequestComplete(HTTPResponse response, int callbackIdx)
     RemoveFromArray(TebexCallbacks, callbackIdx);
 
     if (response.Data == null) {
-        Tebex_err("There was a problem parsing the response to this request. Please try again");
+        Tebex_err("[Tebex™] There was a problem parsing the response to this request. Please try again");
         return;
     }
 
@@ -96,10 +92,8 @@ public void OnRequestComplete(HTTPResponse response, int callbackIdx)
     }
 }
 
-
 public void OnRequestCompleteCB(HTTPResponse response, int callbackIdx)
 {
-
     char value[42];
     GetArrayString(TebexCallbacks, callbackIdx, value, 42);
 
@@ -109,7 +103,7 @@ public void OnRequestCompleteCB(HTTPResponse response, int callbackIdx)
     RemoveFromArray(TebexCallbacks, callbackIdx);
 
     if (response.Data == null) {
-        Tebex_err("There was a problem parsing the response to this request. Please try again");
+        Tebex_err("[Tebex™] There was a problem parsing the response to this request. Please try again");
         return;
     }
 
