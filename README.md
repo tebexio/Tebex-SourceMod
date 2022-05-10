@@ -19,4 +19,4 @@ By submitting code to us, you agree to the terms set out in the **[CONTRIBUTING.
 ## Installation
 We recommend downloading the latest build from your **Tebex™ Control Panel**.
 
-If you wish to use the git verson, the entire contents of the repository should be downloaded into a directory inside your server **`garrysmod/addons/`**.
+If you wish to use the git verson, the entire contents of the repository should be downloaded into a directory inside your server. **(e.g., `garrysmod/addons/`)**.
