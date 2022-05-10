@@ -39,12 +39,11 @@ public void TebexInfoSuccess(JSONObject json)
 
     TebexInformation.SetNum("serverId", server.GetInt("id"));
 
-    Tebex_ok("Server Information");
+    Tebex_ok("[Tebex™] Server Information");
     Tebex_ok("=================");
 
     char infoLine[256];
     char buffer2[256];
-
 
     TebexInformation.GetString("serverName", buffer, 256);
     TebexInformation.GetString("name", buffer2, 256);
