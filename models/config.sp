@@ -13,7 +13,6 @@ public void TebexConfigInit()
     TebexConfig.SetString("buyCommand", "!donate");
     TebexConfig.SetString("baseUrl", "https://plugin.buycraft.net:443");
 
-
     /* As a compatibility shim, we use the old file if it exists. */
     BuildPath(Path_SM, TebexConfigFile, 255, "configs/tebex.cfg");
     if (FileExists(TebexConfigFile))
