@@ -20,7 +20,6 @@ public Action evPlayerSay(Handle event, const char[] szName, bool dontBroadcast)
     char outMsg[256];
     Format(outMsg, 256, "[Tebex™] To access our store, please visit %s", domain);
 
-
     if (StrEqual(msg, buyCommand, false)) {
         ShowMOTDPanel(client, "Server Store", domain, MOTDPANEL_TYPE_URL);
         PrintToChat(client, outMsg);
